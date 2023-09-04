@@ -3,6 +3,7 @@ import { ref } from 'vue'
 import axios from 'axios'
 
 const data = ref<any>()
+axios.get('/mock/test@method').then((res) => console.log(res))
 axios.get('/mock/test').then((res) => console.log(res))
 </script>
 
